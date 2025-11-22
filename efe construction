@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Efe Construction LLC | Reliable. Skilled. Local.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --main: #ee945f;
+            --dark: #493922;
+            --light: #f9f8fe;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .text-shadow {
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .bg-texture {
+            background: linear-gradient(rgba(73, 57, 34, 0.95), rgba(73, 57, 34, 0.95)),
+                url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+            background-size: cover;
+        }
+
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: var(--main);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body class="bg-[var(--light)] text-[var(--dark)] font-sans">
+
+    <!-- Promo Banner -->
+    <div class="bg-[var(--main)] text-[var(--light)] text-center py-2 font-semibold">
+        <p>🔨 Fall Special: Free Estimates on All Home Repairs! Call
+            <a href="tel:8475054811" class="underline">847.505.4811</a>
+        </p>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 bg-white shadow-md z-50">
+        <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+            <!-- Logo + Title -->
+            <div class="flex items-center gap-3">
+                <img src="Port-Alex/Efe LLC/efe construction.jpg" alt="Efe Construction Logo"
+                    class="w-24 h-18 object-cover rounded-full border-2 border-[var(--main)] shadow-md" />
+                <a href="#hero" class="font-bold text-[var(--dark)] text-xl hover:text-[var(--main)] transition">
+                    Efe Construction
+                </a>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="space-x-6 text-sm font-semibold">
+                <a href="#services" class="nav-link hover:text-[var(--main)]">Services</a>
+                <a href="#about" class="nav-link hover:text-[var(--main)]">About</a>
+                <a href="#contact" class="nav-link hover:text-[var(--main)]">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative bg-texture text-[var(--light)] py-24 text-center shadow-inner">
+        <div class="max-w-3xl mx-auto px-4">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-4 text-shadow">Efe Construction LLC</h1>
+            <p class="text-lg md:text-xl opacity-90 mb-8">Reliable • Skilled • Local</p>
+            <a href="#contact"
+                class="bg-[var(--main)] hover:bg-[#e17e40] transition px-8 py-3 rounded-lg font-bold uppercase shadow-lg">Request
+                a Quote</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-6 md:px-16 bg-white">
+        <h3 class="text-3xl font-bold text-center mb-10 text-[var(--dark)]">What We Do Best</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div
+                class="bg-[var(--light)] border-t-4 border-[var(--main)] p-6 shadow-md rounded-xl hover:shadow-2xl transition">
+                <h4 class="text-xl font-bold mb-3">Home Repairs</h4>
+                <p>Plumbing fixes, drywall, painting, flooring — no task too small or too big.</p>
+            </div>
+            <div
+                class="bg-[var(--light)] border-t-4 border-[var(--main)] p-6 shadow-md rounded-xl hover:shadow-2xl transition">
+                <h4 class="text-xl font-bold mb-3">Storefront Glass Installs</h4>
+                <p>Expert glass installation for commercial spaces with precision and safety.</p>
+            </div>
+            <div
+                class="bg-[var(--light)] border-t-4 border-[var(--main)] p-6 shadow-md rounded-xl hover:shadow-2xl transition">
+                <h4 class="text-xl font-bold mb-3">Remodels & Upgrades</h4>
+                <p>Transform your space with kitchen, bathroom, or exterior renovations.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-[var(--dark)] text-[var(--light)] py-20 text-center">
+        <div class="max-w-3xl mx-auto px-4">
+            <h3 class="text-3xl font-extrabold mb-4">Built on Trust & Craftsmanship</h3>
+            <p class="text-lg opacity-90">Efe Construction LLC is committed to delivering professional results with a
+                personal touch. Serving Lake County and surrounding areas with care and precision.</p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="bg-[var(--main)] text-[var(--light)] py-16 text-center">
+        <h3 class="text-3xl font-extrabold mb-6">Let's Build Something Great</h3>
+        <p class="mb-6 text-lg">Call today or send a message to start your next project.</p>
+        <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+            <a href="tel:8475054811"
+                class="bg-[var(--light)] text-[var(--dark)] font-bold px-8 py-3 rounded-lg hover:bg-white transition shadow-md">📞
+                847.505.4811</a>
+            <a href="mailto:efebuild77@gmail.com"
+                class="bg-[var(--light)] text-[var(--dark)] font-bold px-8 py-3 rounded-lg hover:bg-white transition shadow-md">✉️
+                efebuild77@gmail.com</a>
+            <a href="https://www.instagram.com/efebu_ild77" target="_blank"
+                class="bg-[var(--light)] text-[var(--dark)] font-bold px-8 py-3 rounded-lg hover:bg-white transition shadow-md">@efebu_ild77</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[var(--dark)] text-[var(--light)] text-center py-6 text-sm">
+        <p>&copy; <span id="year"></span> Efe Construction LLC • Lake County, Illinois</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
